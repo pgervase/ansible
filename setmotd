@@ -1,0 +1,8 @@
+---
+- name: Show Satellite variables
+  hosts: "{{ server }}"
+  tasks:
+  - name: Update motd
+    copy:
+      content: 'this is new motd from ansible tower'
+      dest: /etc/motd
