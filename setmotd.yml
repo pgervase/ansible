@@ -1,6 +1,6 @@
 ---
 - name: Show Satellite variables
-  hosts: "{{ server }}"
+  hosts: all
   tasks:
   - name: Update motd
     copy:
