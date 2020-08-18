@@ -1,0 +1,8 @@
+---
+- name: failing script
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: failing task
+      fail:
+        msg: "this failed"
