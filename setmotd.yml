@@ -4,5 +4,5 @@
   tasks:
   - name: Update motd
     copy:
-      content: 'this is new motd from ansible tower for the right targets'
+      content: 'I edited the github file'
       dest: /etc/motd
