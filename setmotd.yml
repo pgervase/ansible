@@ -4,5 +4,5 @@
   tasks:
   - name: Update motd
     copy:
-      content: 'I edited the github file - 1458-2'
+      content: 'I edited the github file - 1508'
       dest: /etc/motd
