@@ -1,8 +1,0 @@
----
-- name: Show Satellite variables
-  hosts: all
-  tasks:
-  - name: Update motd
-    copy:
-      content: 'I edited the github file - 1338'
-      dest: /etc/motd
