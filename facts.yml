@@ -1,0 +1,12 @@
+---
+- name: report basic facts on systems
+  hosts: all
+  tasks:
+    - name: report facts
+      debug:
+        msg: 
+        - "date: {{ ansible_date_time.date }}"
+        - "hostname: {{ ansible_fqdn }}"
+        - "all interfaces: {{ ansible_interfaces }}"
+        - "all ips: {{ ansible_all_ipv4_addresses }}"
+        - "ram: {{ ansible_memtotal_mb }}"
