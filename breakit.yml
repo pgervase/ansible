@@ -1,0 +1,9 @@
+# autotest rhel8.4
+- hosts: "{{HOSTS}}"
+  name: Add noapic to cmdline to break the issue
+  become: true
+
+  tasks:
+    - name: Add noapic kernel parameter to all entries
+      command: grubby --args "noapic" --update-kernel=ALL
+      when: ansible_distribution_major_version == "8"
