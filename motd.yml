@@ -4,5 +4,5 @@
   tasks:
   - name: Update motd
     copy:
-      content: 'content from the phone call'
+      content: 'new content from gh'
       dest: /etc/motd
