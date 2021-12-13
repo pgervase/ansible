@@ -1,6 +1,6 @@
 ---
 - name: deploy insights client to rhel servers
-  hosts: rhel
+  hosts: all
  
   tasks:
   - include_role:
