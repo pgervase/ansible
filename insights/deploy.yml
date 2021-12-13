@@ -1,0 +1,7 @@
+---
+- name: deploy insights client to rhel servers
+  hosts: rhel
+ 
+  tasks:
+  - include_role:
+      name: redhat.insights.insights_client
