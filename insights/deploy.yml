@@ -1,7 +1,13 @@
 ---
-- name: deploy insights client to rhel servers
-  hosts: all
+- name: deploy insights client with tags
+  hosts: rhel
  
   tasks:
   - include_role:
       name: redhat.insights.insights_client
+      vars:
+        insights_tags:
+          env: prod
+          site: rdu
+          app: ecomm
+          default_ip: “{{ ansible_default_ipv4.address }}”
