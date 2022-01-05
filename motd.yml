@@ -4,5 +4,5 @@
   tasks:
   - name: Update motd
     copy:
-      content: 'new content - oct11505'
+      content: 'new content - 20220105'
       dest: /etc/motd
